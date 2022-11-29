@@ -9,7 +9,7 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	</http:listener-config>
 	<flow name="hello-apiFlow" doc:id="b9f3a805-878b-44dd-9ba1-5866aeb9ae9f" >
 		<http:listener doc:name="Listener" doc:id="40667789-55dd-4167-87a3-c9a40fca021c" config-ref="HTTP_Listener_config" path="/hello"/>
-		<set-payload value='#["Hello Success"]' doc:name="Set Payload" doc:id="730de240-639b-42bd-aa73-835444d1fe95" />
+		<set-payload value='#["Hello Succes"]' doc:name="Set Payload" doc:id="730de240-639b-42bd-aa73-835444d1fe95" />
 		<logger level="INFO" doc:name="Logger" doc:id="107094c9-fae4-4a4e-824d-035cefced799" message='#["Success Message"]'/>
 	</flow>
 </mule>
